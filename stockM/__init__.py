@@ -7,7 +7,8 @@ import yfinance as yf
 TEST_DICT = {
     "AMZN": 10,
     "MSFT": 100,
-    "BABA": 10
+    "BABA": 10,
+    "IEX": 100
 }
 
 
