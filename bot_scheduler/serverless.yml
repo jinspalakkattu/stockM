@@ -19,10 +19,10 @@ provider:
     DATABASE_URL: ${env:DATABASE_URL}
 
 functions:
-  update_users_SG:
+  update_users_BH:
     handler: handler.update_users
     events:
-      - schedule: cron(00 09 ? * MON-FRI *)  # 9am UTC = 5pm SGT
+      - schedule: cron(30 09 ? * MON-FRI *)  # 9:30am UTC = 12:30pm BH
   
   update_users_US:
     handler: handler.update_users
