@@ -22,7 +22,7 @@ functions:
   update_users_BH:
     handler: handler.update_users
     events:
-      - schedule: cron(30 09 ? * MON-FRI *)  # 9:30am UTC = 12:30pm BH
+      - schedule: cron(55 09 ? * MON-FRI *)  # 9:30am UTC = 12:55pm BH
   
   update_users_US:
     handler: handler.update_users
