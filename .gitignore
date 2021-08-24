@@ -131,6 +131,6 @@ dmypy.json
 # custom add-ons
 bot_scheduler/stockM/
 bot_scheduler/node_modules/
-bot_scheduler/.serverless
+#bot_scheduler/.serverless
 bot_scheduler/__pycache__
 bot_scheduler/package-lock.json
