@@ -19,6 +19,12 @@ provider:
     DATABASE_URL: ${env:DATABASE_URL}
 
 functions:
+  update_w_job:
+    handler: handler.update_users
+    events:
+      - schedule: cron(0/02 * * ? *)  # Every 02 Minute In Every Day
+#      - schedule: cron(16 10 ? * MON-FRI *)  # 10:10am UTC = 01:10pm
+
   update_users_BH:
     handler: handler.update_users
     events:

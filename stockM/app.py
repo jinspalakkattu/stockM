@@ -325,13 +325,15 @@ def main() -> None:
     dispatcher.add_handler(CommandHandler("get_px_change", get_px_change))
     dispatcher.add_handler(CommandHandler("default", get_default_port))
 
+    logger.info(f"@  started!")
+
     # Start the Bot
     # `start_polling` for local dev; webhook for production
     # updater.start_polling()
-    updater.start_webhook(listen="0.0.0.0",
-                          port=int(PORT),
-                          url_path=TOKEN)
-    updater.bot.setWebhook("https://telegram-ufs-stockm.herokuapp.com/" + TOKEN)
+    # updater.start_webhook(listen="0.0.0.0",
+    #                       port=int(PORT),
+    #                       url_path=TOKEN)
+    # updater.bot.setWebhook("https://telegram-ufs-stockm.herokuapp.com/" + TOKEN)
 
     # Block until the user presses Ctrl-C or the process receives SIGINT,
     # SIGTERM or SIGABRT. This should be used most of the time, since
