@@ -19,9 +19,9 @@ logger = logging.getLogger(__name__)
 # env_path = Path(".") / ".env"
 # load_dotenv(dotenv_path=env_path, verbose=True)
 
-TOKEN = os.environ.get("TOKEN", "1725624123:AAG3gc7O6xfRF8TtLckcewlvXpPev8F_Pyg")
+TOKEN = os.environ.get("TOKEN")
 # DB = os.getenv("DB")
-DATABASE_URL = os.environ.get("DATABASE_URL", "postgres://ufstudio:jins2010@misselvirabot.cxcgpm4dmurj.us-east-2.rds.amazonaws.com:5432/MissElviraBot")
+DATABASE_URL = os.environ.get("DATABASE_URL")
 
 db = create_engine(DATABASE_URL)
 base = declarative_base()
